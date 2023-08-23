@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap');
+
+:root {
+    --body-bg: #fafafa;
+    --body-color: #393939;
+    --limit-bg-color:rgba(158, 219, 159, 0.668);
+    --input-bg-color:rgba(158, 219, 159, 0.545);
+    --placeholder-color:#393939;
+}
+
+.dark-mode:root {
+    --body-bg: #313131;
+    --body-color: #dad9d9b5;
+    --limit-bg-color:#55555565;
+    --input-bg-color:#76767675;
+    --placeholder-color:#cdcdcd;
+}
+
+#switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  #switch {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 35px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 90%;
+    margin-top: 1%;
+  }
+  
+  #switch:checked {
+    background-color: rgb(96, 162, 213);
+  }
+  
+  #switch:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  #switch:checked:before {
+    transform: translateX(20px);
+  }
+
+body {
+    background: var(--body-bg);
+    color: var(--body-color);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+header {
+    text-align: center;
+    font-size: 18px;
+    background-color: var(--limit-bg-color);
+    width: 100%;
+}
+
+h1 {
+    padding: 3.5vh;
+    padding-top: 0;
+}
+
+#foto-cadastro {
+    width: 70vh;
+    height: auto;
+
+}
+
+.caixas {
+    margin-top: 8vh;
+}
+
+.cadastro-page {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nomeS {
+    display: flex;
+}
+
+#nome {
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--limit-bg-color);
+    margin-bottom: 1vh;
+    box-shadow: .5px .5px .5px #494949;
+}
+
+#sobrenome {
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--limit-bg-color);
+    margin-bottom: 1vh;
+    margin-left: 1.5vw;
+    box-shadow: .5px .5px .5px #494949;
+}
+
+#sobrenome-text {
+    margin-left: 1.5vw;
+}
+
+.endereco-part1{
+    display: flex;
+}
+
+.endereco-part2 {
+    display: flex;
+}
+
+#estado {
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--limit-bg-color);
+    margin-bottom: 1vh;
+    box-shadow: .5px .5px .5px #494949;
+}
+
+#cidade {
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--limit-bg-color);
+    margin-bottom: 1vh;
+    margin-left: 1.5vw;
+    box-shadow: .5px .5px .5px #494949;
+}
+
+#cidade-text {
+    margin-left: 1.5vw;
+}
+
+#bairro {
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--limit-bg-color);
+    margin-bottom: 1vh;
+    box-shadow: .5px .5px .5px #494949;
+}
+
+#rua {
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--limit-bg-color);
+    margin-bottom: 1vh;
+    margin-left: 1.5vw;
+    box-shadow: .5px .5px .5px #494949;
+
+}
+
+#rua-text {
+    margin-left: 1.5vw;
+}
+
+#numero {
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--limit-bg-color);
+    margin-bottom: 1vh;
+    margin-left: 1.5vw;
+    box-shadow: .5px .5px .5px #494949;
+}
+
+#numero-text {
+    margin-left: 1.5vw;
+}
+
+#email {
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--limit-bg-color);
+    margin-bottom: 1vh;
+    box-shadow: .5px .5px .5px #494949;
+}
+
+.senha {
+    display: flex;
+}
+
+#senha {
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--limit-bg-color);
+    margin-bottom: 1vh;
+    box-shadow: .5px .5px .5px #494949;
+}
+
+#senha02 {
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--limit-bg-color);
+    margin-bottom: 1vh;
+    margin-left: 1.5vw;
+    box-shadow: .5px .5px .5px #494949;
+}
+
+#senha02-text {
+    margin-left: 1.5vw;
+}
+
+#submit-button {
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    margin: 30px;
+    margin-left: 10vw;
+    font-size: large;
+    color: var(--placeholder-color);
+    background: var(--limit-bg-color);
+    box-shadow: .5px .5px .5px #494949;
+}
+
+footer {
+    text-align: center;
+    background: var(--limit-bg-color);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#rodape {
+    font-size: 14px;
+    padding: 3%;
+}
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro-profile.css">
+    <title>www.whatever.com/cadastro</title>
+    <link rel="shortcut icon" href="shirt-icon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <label for="switch">
+            <input type="checkbox" id="switch" Dark Mode>
+        </label>
+        <h1>Cadastre-se</h1>
+    </header>
+
+    
+    <main>
+        <div class="cadastro-page">
+            <section class="caixas">
+                <section class="nomeS">
+                    <div class="nome">
+                        <h2>Nome</h2>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="sobrenome">
+                        <h2 id="sobrenome-text">Sobrenome</h2>
+                        <input type="text" name="sobrenome" id="sobrenome">
+                    </div>
+                </section>
+                <div class="endereco">
+                    <section class="endereco-part1">
+                        <div>
+                            <h2>Estado</h2>
+                            <input type="text" name="estado" id="estado">
+                        </div>
+                        <div>
+                            <h2 id="cidade-text">Cidade</h2>
+                            <input type="text" name="cidade" id="cidade">
+                        </div>
+                    </section>
+                    <section class="endereco-part2">
+                        <div>
+                            <h2>Bairro</h2>
+                            <input type="text" name="bairro" id="bairro">
+                        </div>
+
+                        <div>
+                            <h2 id="rua-text">Rua</h2>
+                            <input type="text" name="rua" id="rua">
+                        </div>
+                        <div>
+                            <h2 id="numero-text">Número</h2>
+                            <input type="text" name="numero" id="numero">
+                        </div>
+                    </section>
+                </div>
+                <div class="email">
+                    <h2>Email</h2>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="senha">
+                    <div>
+                        <h2>Senha</h2>
+                        <input type="password" name="senha" id="senha">
+                    </div>
+                    <div>
+                        <h2 id="senha02-text">Repita sua senha</h2>
+                        <input type="password" name="senha02" id="senha02">
+                    </div>
+                </div>
+                <div>
+                    <input id="submit-button" type="button" value="Submit">
+                </div>
+            </section>
+
+            <div>
+                <img id="foto-cadastro" src="fotocadastro.png" alt="cadastro-img">
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <h5 id="rodape"><em>
+            Site totalmente destinado a testes <br>
+                Não há intenções de usa-lo comercialmente.
+        </em>
+        </h5>
+    </footer>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
